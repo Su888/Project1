@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "News Cycle";
+    src: url('fonts/newscycle.ttf');
+}
+@font-face {
+    font-family: "Contrail One";
+    src: url('fonts/contrailone.ttf');
+}
+@media not print {
+    body{
+        color: #635959;
+        font-family: "News Cycle" !important;
+    }
+    header{
+        background-color: #242323;
+        color: #EFEFEF;
+        padding: 20px 50px;
+        font-family: "Contrail One";
+    }
+    main > h3{
+        color: #8C1018;
+        font-size: 2em;
+        display: flex;
+    }
+    main > article >h4{
+        color: #8C1018;
+    }
+    main>article>p>a{
+        color: #314052;
+    }
+    /*main>article{
+        margin: 5px 0px;
+        padding: 5px 5px;
+        box-shadow: -1px -1px 6px #888888;
+    }*/
+}
+main{
+    padding: 5px 10px;
+}
+header>h1{
+    font-size: 4em;
+}
+main>article>figure>figcaption{
+    font-size: 0.75em;
+    font-style: italic;
+}
+main>article>figure>figcaption::before{
+    content: 'Pictured above: ';
+    font-weight: bold;
+}
+main>article>time{
+    float: right;
+    font-size: 0.75em;
+    font-weight: lighter;
+}
+.carousel-inner {
+    text-align: center;
+}
+.carousel.item>img{
+    display: inline-block;
+}
+/*section#carousel> figure> img{
+    display: none;   
+    margin: 0px auto; 
+}
+section#carousel>figure.visible>img{
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+section#carousel>figure>figcaption{
+    display: none;
+}
+section#carousel>figure.visible>figcaption{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}*/
+@media print{
+    header{
+        padding: 0px;
+    }
+    main>article{
+        box-shadow: none;
+    }
+    body>header>h1{
+        font-size: 2em;
+    }
+    body>header>h2{
+        display: none;
+    }
+}
